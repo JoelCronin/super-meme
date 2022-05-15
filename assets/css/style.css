@@ -1,0 +1,96 @@
+header {
+  padding: 40px;
+  font-family: Tahoma;
+  background-color: rgb(54, 3, 54);
+  color: #ffffff;
+  border-bottom: 10px solid aquamarine;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  font-family: Tahoma;
+  font-size: 20px;
+  background-color: rgb(54, 3, 54);
+  justify-content: space-around;
+}
+
+nav a{
+  background-color: rgb(54, 3, 54);
+  padding: 14px 20px;
+  color: white; 
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+.container-1{
+    border: 3px solid black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+.container-1 h2 {
+    margin: 0px;
+}
+
+.container-1 p {
+  margin: 0px;
+}
+.profile {
+  border: 3px solid black;
+  height: 200px
+
+}
+
+.bio {
+  border: 3px solid black;
+  height: 200px;
+  flex-grow: 1;
+}
+
+.container-2{
+  border: 3px solid black;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: small;
+}
+
+.projects {
+border: 3px solid black;
+height: 200px
+
+}
+
+.deployed{
+border: 3px solid black;
+height: 200px;
+flex-grow: 1;
+}
+.deployed-2{
+  border: 3px solid black;
+  height: 200px;
+  flex-grow: 1;
+}
+
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  nav,
+  body,
+  .container-1,
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
