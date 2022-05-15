@@ -1,3 +1,7 @@
+*{
+   font-family: Tahoma;
+}
+
 header {
   padding: 40px;
   font-family: Tahoma;
@@ -56,32 +60,59 @@ nav ul {
   border: 3px solid black;
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
   font-size: small;
 }
 
 .projects {
 border: 3px solid black;
-height: 200px
-
+height: 400px
 }
 
-.deployed{
+.horiseon {
 border: 3px solid black;
-height: 200px;
+height: 400px;
+display: flex;
+align-items: center;
+flex-direction: column;
+flex-wrap: wrap;
 flex-grow: 1;
 }
-.deployed-2{
+
+.horiseon p {
+  margin: 0 30px;
+}
+
+.first-project {
+  height: 220px;
+  width: 220px;
+}
+
+.container-3 {
   border: 3px solid black;
-  height: 200px;
+  height: 400px;
   flex-grow: 1;
+  display:flex;
+  flex-direction: row;
+  font-size: small;
+  justify-content: space-around;
 }
 
-
-img {
-  height: 100px;
-  width: 100px;
+.second-project{
+  border: 3px solid black;
 }
+
+ .third-project{
+  border: 3px solid black;
+ }
+
+ .fourth-project{
+  border: 3px solid black;
+ }
+
+ h3{
+   text-align: center;
+ }
+
 
 @media screen and (max-width: 768px) {
   /* Use flex-direction to stack the navbar, sidebar, and body */
