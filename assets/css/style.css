@@ -64,7 +64,6 @@ nav ul {
 
 .bio {
   flex-grow: 1;
-  height: 500px;
   flex-wrap: wrap;
   padding: 50px;
   line-height: 1.5;
@@ -168,7 +167,8 @@ footer p{
   body,
   .container-1,
   .container-2,
-  .container-3 {
+  .container-3,
+  .contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
