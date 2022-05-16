@@ -101,7 +101,7 @@ font-size: medium;
 }
 
 .horiseon p {
-  margin: 0 30px;
+  margin: 0px 30px 30px 30px;
 }
 
 .first-project {
@@ -121,12 +121,9 @@ font-size: medium;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-  flex-grow: 1;
-  min-height: 300px;
   align-items: center;
   padding: 10px;
   border-right: #eaf2fa solid 2px;
-  width: 25%;
   text-align: justify;
   text-justify: inter-word;
 }
