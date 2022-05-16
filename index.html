@@ -10,52 +10,75 @@
     <body>
         <main>
             <header class="header">
-                <h1>Joel Cronin's Portfolio</h1>
+                <h1>Joel Cronin</h1>
             </header>  
-
+            <!-- Nav bar with links to relevant section on page, stacks in column below 768px -->
             <nav class="navigation">
-                <a href="">Profile</a>
-                <a href="">Projects</a>
-                <a href="">Contact</a>
+                <a href="#profile-id">Profile</a>
+                <a href="#bio-id">About Me</a>
+                <a href="#project-id">Projects</a>
+                <a href="#contact-id">Contact</a>
             </nav>
-
+            <!-- Profile and About me Section -->
             <section class="container-1">
-                <aside class="profile">
-                    <h2>Profile</h2>
-                    <img src="WIN_20220513_19_13_48_Pro.jpg" alt="">
-                    <h2>Joel Cronin</h2>
-                    <p>University of Toronto</p>
-                    <p>Coding Bootcamp Graduate</p>
+                <aside class="profile" id="profile-id">
+                    <img src="assets/images/IMG-20210606-WA0023.jpg" alt="profile-pic" class="profPic"> <br><br>
+                    <h2>Joel Cronin</h2> <br>
+                    <p>University of Toronto</p><br>
+                    <p>Coding Bootcamp Student</p><br>
                 </aside>
-                <section class="bio">
-                    <h2>About me</h2>
-                    <p>Originally from London UK. Moved to Toronto for a change of life and career.</p>
+                <section class="bio" id="bio-id">
+                    <h2>About me</h2><br>
+                    <p>Hi, Im Joel Cronin, currently studying to become a Software Engineer with the University of Toronto's Coding Bootcamp. During this course I will learn the fundamentals of HTML, CSS and JavaScript languages. I also have acquired great experience in API design and am comfortable with JSON, AJAX and REST</p> <br>
+                    <p>Originally from London, UK I moved to Toronto in March 2022. In London I was a Mechanical and Electrical Engineer for 7 years with London Underground but have decided to transition into software development. </p>
                 </section>
             </section>
+            <!-- Displays my first project, with a larger picture than future projects -->
             <section class="container-2">
-                <aside class="projects">
+                <aside class="projects-section" id="project-id">
                     <h2>Projects</h2>
                 </aside>
                 <article class="horiseon">
-                    <h3>Horiseon</h3>
-                    <a href="https://joelcronin.github.io/improved-octo-goggles/"><img src="assets/images/first-project.png" class="first-project" alt="picture of first project"></a>
-                    <p>In my first project, the client 'Horiseon' approched me to refactor their code for their websites homepage. hello hello hellohello hello hello hellohello  hello hello hello</p>
+                    <h3 class="title">Horiseon</h3>
+                    <!-- Image links to deployed application in new window -->
+                    <a href="https://joelcronin.github.io/improved-octo-goggles/" target="_blank"><img src="assets/images/first-project.png" class="first-project" alt="picture of first project"></a>
+                    <p>In my first project, the client 'Horiseon' approched me to refactor their code for their websites homepage in order to mazimize their SEO. When looking throgh their code it also became clear that their CSS styling needed to be consolidated and there were also some non-functioning links that needed fixing.</p> <br>
+                    <!--  Links to the deployed applications readME file, detailing my approach in a new window -->
+                    <p><a href="https://github.com/JoelCronin/improved-octo-goggles/blob/main/README.md" target="_blank">Click here</a> to read how I did this and click the image above to see the final product!</p>
                 </article>
             </section>
             <section class="container-3">
-               <article class="second-project">
+                <!-- Have set up the structure to quickly add future projects as I complete them. Links currently invalid but will add them in when needed too -->
+               <article class="project">
                  <h3>Second Project</h3>
                  <a href="#"><img src="https://via.placeholder.com/150" alt="second project"></a>
+                 <p>Will add picture above and brief description here of project when I have completed it.</p>
                </article> 
-               <article class="third-project">
+               <article class="project">
                  <h3>Third Project</h3>
-                 <a href="#"><img src="https://via.placeholder.com/150" alt="second project"></a>
+                 <a href="#"><img src="https://via.placeholder.com/150" alt="third project"></a>
+                 <p>Will add picture above and brief description here of project when I have completed it.</p>
                </article>
-               <article class="fourth-project">
-                <h3>Fourth Project</h3>
-                <a href="#"><img src="https://via.placeholder.com/150" alt="second project"></a>
-            </article>
+               <article class="project">
+                 <h3>Fourth Project</h3>
+                 <a href="#"><img src="https://via.placeholder.com/150" alt="fourth project"></a>
+                 <p>Will add picture above and brief description here of project when I have completed it.</p>
+               </article>
+               <article class="project">
+                 <h3>Fifth Project</h3>
+                 <a href="#"><img src="https://via.placeholder.com/150" alt="fifth project"></a>
+                 <p>Will add picture above and brief description here of project when I have completed it.</p>
+               </article>
             </section>
+            <!-- Contact Section -->
+            <section class="contact" id="contact-id">
+                <p><strong>Email:</strong> joelcronin7@gmail.com</p>
+                <p><strong>Phone:</strong> 647-444-1245</p>
+                <p> <strong>Github: </strong> https://github.com/JoelCronin </p>
+            </section>
+            <footer>
+                <p>© Joel Cronin</p>
+            </footer>
         </main>
     </body>
 </html>

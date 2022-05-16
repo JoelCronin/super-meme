@@ -1,28 +1,31 @@
 *{
-   font-family: Tahoma;
+   font-family: "roboto", sans-serif ;
 }
 
 header {
-  padding: 40px;
-  font-family: Tahoma;
-  background-color: rgb(54, 3, 54);
-  color: #ffffff;
-  border-bottom: 10px solid aquamarine;
+  background-color: #f7f7f7;
+  color: black;
   text-align: center;
+  margin: 0;
+}
+
+h1{
+  margin: 0%;
 }
 
 nav {
   display: flex;
-  font-family: Tahoma;
   font-size: 20px;
-  background-color: rgb(54, 3, 54);
+  background-color: #f7f7f7;
   justify-content: space-around;
+  color: black;
 }
 
 nav a{
-  background-color: rgb(54, 3, 54);
+  background-color: #f7f7f7;
   padding: 14px 20px;
-  color: white; 
+  color: black; 
+  text-decoration: none;
 }
 
 nav ul {
@@ -30,52 +33,72 @@ nav ul {
 }
 
 .container-1{
-    border: 3px solid black;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     margin: 0px;
+    background-color: #fff;
 }
 
 .container-1 h2 {
     margin: 0px;
+    font-size: xx-large;
 }
 
 .container-1 p {
   margin: 0px;
 }
 .profile {
-  border: 3px solid black;
-  height: 200px
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: #eaf2fa 2px solid;
+  padding: 4px;
+  padding: 50px;
+}
 
+.profPic {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
 }
 
 .bio {
-  border: 3px solid black;
-  height: 200px;
   flex-grow: 1;
+  height: 500px;
+  flex-wrap: wrap;
+  padding: 50px;
+  line-height: 1.5;
+  font-size: large;
 }
 
 .container-2{
-  border: 3px solid black;
   display:flex;
   flex-direction: row;
   font-size: small;
+  background-color: #eaf2fa ;
 }
 
-.projects {
-border: 3px solid black;
-height: 400px
+.title {
+  font-size: x-large;
+}
+
+.projects-section {
+
+border-right: 2px white solid;
+font-size: x-large;
+padding-right: 7px;
+
 }
 
 .horiseon {
-border: 3px solid black;
-height: 400px;
 display: flex;
 align-items: center;
 flex-direction: column;
 flex-wrap: wrap;
 flex-grow: 1;
+text-align: justify;
+text-justify: inter-word;
+font-size: medium;
 }
 
 .horiseon p {
@@ -84,44 +107,83 @@ flex-grow: 1;
 
 .first-project {
   height: 220px;
-  width: 220px;
+  width: 300px;
 }
 
 .container-3 {
-  border: 3px solid black;
-  height: 400px;
-  flex-grow: 1;
-  display:flex;
+  display: flex;
   flex-direction: row;
   font-size: small;
   justify-content: space-around;
 }
 
-.second-project{
-  border: 3px solid black;
+.project{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+  min-height: 300px;
+  align-items: center;
+  padding: 10px;
+  border-right: #eaf2fa solid 2px;
+  width: 25%;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
- .third-project{
-  border: 3px solid black;
+ .project h3{
+   height: 20px;
  }
 
- .fourth-project{
-  border: 3px solid black;
- }
+ .contact {
+  display: flex;
+  font-family: Tahoma;
+  font-size: 20px;
+  background-color: #eaf2fa;
+  justify-content: space-around;
+  font-size: smaller;
+}
 
- h3{
-   text-align: center;
- }
+footer p{
+  text-align: center;
+}
 
+@media screen and (min-width: 992px){
+  /* When viewing on larger monitors the 2px borders were hard to see so increased it to 6px for screens above 992px */
+  .project,
+   .profile
+    {
+    border-right: #eaf2fa solid 6px;
+  }
+
+  .projects-section {
+    border-right: #fff solid 6px;
+  }
+}
 
 @media screen and (max-width: 768px) {
-  /* Use flex-direction to stack the navbar, sidebar, and body */
+  /* Use flex-direction to stack the page elements in a column when viewing on smaller screens */
   nav,
   body,
   .container-1,
-  .container-2 {
+  .container-2,
+  .container-3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
   }
+
+  /* Borders needed to be adjusted to make sense on smaller screens so removed in some sections and moved from right to bottom on others */
+  
+  .projects-section {
+    border: 0
+  }
+  .profile,
+  .project {
+    border-bottom: #eaf2fa solid 2px;
+    border-right: 0;
+  }
+
 }
