@@ -1,57 +1,66 @@
+:root{
+  /* Just four colours used and all have vars as below: */
+  --lightblue: #eaf2fa;
+  --white: #fff;
+  --offWhite: #f7f7f7;
+  --black: black;
+}
+
 *{
    font-family: "roboto", sans-serif ;
 }
 
 header {
-  background-color: #f7f7f7;
-  color: black;
+  background-color: var(--offWhite);
+  color: var(--black);
   text-align: center;
   margin: 0;
 }
 
 h1{
-  margin: 0%;
+  margin: 0;
 }
 
 nav {
   display: flex;
   font-size: 20px;
-  background-color: #f7f7f7;
+  background-color: var(--offWhite);
   justify-content: space-around;
-  color: black;
+  color: var(--black);
 }
 
 nav a{
-  background-color: #f7f7f7;
+  background-color: var(--offWhite);
   padding: 14px 20px;
   color: black; 
+  /* Removed the links underline for cleaner look */
   text-decoration: none;
 }
 
-nav ul {
-  list-style-type: none;
+/* All containers will be flex on larger screens */
+.container{
+  display: flex;
+  flex-direction: row;
 }
 
 .container-1{
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    background-color: #fff;
+    margin: 0;
+    background-color: var(--white);
 }
 
 .container-1 h2 {
-    margin: 0px;
+    margin: 0;
     font-size: xx-large;
 }
 
 .container-1 p {
-  margin: 0px;
+  margin: 0;
 }
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: #eaf2fa 2px solid;
+  border-right: var(--lightblue) 2px solid;
   padding: 4px;
   padding: 50px;
 }
@@ -59,6 +68,7 @@ nav ul {
 .profPic {
   height: 250px;
   width: 250px;
+  /* 50% border radius makes profile picture a perfect circle */
   border-radius: 50%;
 }
 
@@ -71,19 +81,17 @@ nav ul {
 }
 
 .container-2{
-  display:flex;
-  flex-direction: row;
   font-size: small;
-  background-color: #eaf2fa ;
+  background-color: var(--lightblue) ;
 }
 
 .title {
   font-size: x-large;
 }
 
-.projects-section {
+.projects-title {
 
-border-right: 2px white solid;
+border-right: 2px var(--white) solid;
 font-size: x-large;
 padding-right: 7px;
 
@@ -110,8 +118,6 @@ font-size: medium;
 }
 
 .container-3 {
-  display: flex;
-  flex-direction: row;
   font-size: small;
   justify-content: space-around;
 }
@@ -123,7 +129,7 @@ font-size: medium;
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  border-right: #eaf2fa solid 2px;
+  border-right: var(--lightblue) solid 2px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -136,7 +142,7 @@ font-size: medium;
   display: flex;
   font-family: Tahoma;
   font-size: 20px;
-  background-color: #eaf2fa;
+  background-color: var(--lightblue);
   justify-content: space-around;
   font-size: smaller;
 }
@@ -150,11 +156,11 @@ footer p{
   .project,
    .profile
     {
-    border-right: #eaf2fa solid 6px;
+    border-right: var(--lightblue) solid 6px;
   }
 
-  .projects-section {
-    border-right: #fff solid 6px;
+  .projects-title {
+    border-right: var(--white) solid 6px;
   }
 }
 
@@ -174,12 +180,12 @@ footer p{
 
   /* Borders needed to be adjusted to make sense on smaller screens so removed in some sections and moved from right to bottom on others */
   
-  .projects-section {
+  .projects-title {
     border: 0
   }
   .profile,
   .project {
-    border-bottom: #eaf2fa solid 2px;
+    border-bottom: var(--lightblue) solid 2px;
     border-right: 0;
   }
 
